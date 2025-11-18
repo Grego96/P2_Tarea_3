@@ -1,0 +1,48 @@
+1,37c1,9
+< 1>Se ejecutó 'crearTColaReservas' exitosamente
+< 2>Socio de ci 23456789 creado exitosamente.
+< 3>4>5>Reserva de libro de isbn 843760494 a socio 23456789 creada exitosamente.
+< 6>Se ejecutó 'encolarTColaReservas' exitosamente.
+< 7>Socio de ci 12345678 creado exitosamente.
+< 8>9>10>Reserva de libro de isbn 421233446 a socio 12345678 creada exitosamente.
+< 11>Se ejecutó 'encolarTColaReservas' exitosamente.
+< 12>Cola de Reservas:
+< Reserva de libro Cien años de soledad por Lucia Perez.
+< Reserva de libro La ratesa por Jim Dear.
+< 13>La cantidad de reservas en la cola es 2
+< 14>Se ejecutó 'desencolarTColaReservas' exitosamente
+< 15>Cola de Reservas:
+< Reserva de libro La ratesa por Jim Dear.
+< 16>Reserva obtenida al ejecutar frente:
+< Reserva de libro La ratesa por Jim Dear.
+< 17>La cantidad de reservas en la cola es 1
+< 18>Socio de ci 45678901 creado exitosamente.
+< 19>20>21>Reserva de libro de isbn 431244557 a socio 45678901 creada exitosamente.
+< 22>Se ejecutó 'encolarTColaReservas' exitosamente.
+< 23>Socio de ci 56789012 creado exitosamente.
+< 24>25>26>Reserva de libro de isbn 411222335 a socio 56789012 creada exitosamente.
+< 27>Se ejecutó 'encolarTColaReservas' exitosamente.
+< 28>Cola de Reservas:
+< Reserva de libro La ratesa por Jim Dear.
+< Reserva de libro Lo bello y lo triste por Juan Diaz.
+< Reserva de libro Todos los fuegos el fuego por Pedro Pascal.
+< 29>La cantidad de reservas en la cola es 3
+< 30>Se ejecutó 'desencolarTColaReservas' exitosamente
+< 31>Se ejecutó 'desencolarTColaReservas' exitosamente
+< 32>Cola de Reservas:
+< Reserva de libro Todos los fuegos el fuego por Pedro Pascal.
+< 33>Reserva obtenida al ejecutar frente:
+< Reserva de libro Todos los fuegos el fuego por Pedro Pascal.
+< 34>La cantidad de reservas en la cola es 1
+< 35>Se ejecutó 'liberarTColaReservas' exitosamente
+< 36>Fin.
+---
+> principal: principal.cpp:1402: void main_desencolarColaReservas(TColaReservas): Assertion `cantidadTColaReservas(colaReservas) > 0' failed.
+> ==17335== 992 (32 direct, 960 indirect) bytes in 2 blocks are definitely lost in loss record 5 of 8
+> ==17335==    at 0x4846FA3: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+> ==17335==    by 0x1108E7: crearTReserva(rep_socio*, rep_libro*) (reserva.cpp:12)
+> ==17335==    by 0x10D2A9: main_crearReserva(rep_reserva*&, rep_socio*&, rep_libro*&) (principal.cpp:1236)
+> ==17335==    by 0x10A29D: main (principal.cpp:445)
+> ==17335== 
+> timeout: the monitored command dumped core
+> Aborted

@@ -1,0 +1,33 @@
+2,3c2
+< 2>Cola de Reservas:
+< 3>Socio de ci 12345678 creado exitosamente.
+---
+> 2>3>Socio de ci 12345678 creado exitosamente.
+6,8c5
+< 8>Cola de Reservas:
+< Reserva de libro Todos los fuegos el fuego por Jim Dear.
+< 9>Socio de ci 12345678 creado exitosamente.
+---
+> 8>9>Socio de ci 12345678 creado exitosamente.
+11,14c8
+< 14>Cola de Reservas:
+< Reserva de libro Todos los fuegos el fuego por Jim Dear.
+< Reserva de libro La ratesa por Jim Dear.
+< 15>Se ejecutó 'liberarTColaReservas' exitosamente
+---
+> 14>15>Se ejecutó 'liberarTColaReservas' exitosamente
+25,29c19
+< 32>Cola de Reservas:
+< Reserva de libro Lo bello y lo triste por Jim Dear.
+< Reserva de libro Cien años de soledad por Jim Dear.
+< Reserva de libro La ratesa por Lucia Perez.
+< 33>Se ejecutó 'liberarTColaReservas' exitosamente
+---
+> 32>33>Se ejecutó 'liberarTColaReservas' exitosamente
+30a21,26
+> ==17054== 2,480 (80 direct, 2,400 indirect) bytes in 5 blocks are definitely lost in loss record 5 of 5
+> ==17054==    at 0x4846FA3: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+> ==17054==    by 0x1108E7: crearTReserva(rep_socio*, rep_libro*) (reserva.cpp:12)
+> ==17054==    by 0x10D2A9: main_crearReserva(rep_reserva*&, rep_socio*&, rep_libro*&) (principal.cpp:1236)
+> ==17054==    by 0x10A29D: main (principal.cpp:445)
+> ==17054== 

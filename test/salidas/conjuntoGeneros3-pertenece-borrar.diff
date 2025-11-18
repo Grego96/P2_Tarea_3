@@ -1,0 +1,24 @@
+9,10c9,10
+< 9>El genero de id 3 NO pertenece al conjunto.
+< 10>El genero de id 4 NO pertenece al conjunto.
+---
+> 9>El genero de id 3 pertenece al conjunto.
+> 10>El genero de id 4 pertenece al conjunto.
+12d11
+< 0 1 2
+17d15
+< 
+19c17
+< 17>La cantidad máxima del conjunto es: 3.
+---
+> 17>La cantidad máxima del conjunto es: 0.
+23,25c21,23
+< 21>La conjunto de generos NO es vacío.
+< 22>El cardinal del conjunto es: 2.
+< 23>La cantidad máxima del conjunto es: 3.
+---
+> 21>El conjunto de generos es vacío.
+> 22>El cardinal del conjunto es: 0.
+> 23>La cantidad máxima del conjunto es: 0.
+28d25
+< 0

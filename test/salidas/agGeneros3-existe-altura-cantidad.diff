@@ -1,0 +1,56 @@
+7c7
+< 7>El género de id 44 está incluído en el árbol de géneros.
+---
+> 7>El género de id 44 NO está incluído en el árbol de géneros.
+9,10c9,10
+< 9>La altura de del árbol general es: 1.
+< 10>Existen 1 géneros en el árbol de géneros.
+---
+> 9>La altura de del árbol general es: 0.
+> 10>Existen 0 géneros en el árbol de géneros.
+13,16c13,16
+< 13>La altura de del árbol general es: 2.
+< 14>Existen 3 géneros en el árbol de géneros.
+< 15>El género de id 17 está incluído en el árbol de géneros.
+< 16>El género de id 44 está incluído en el árbol de géneros.
+---
+> 13>La altura de del árbol general es: 0.
+> 14>Existen 0 géneros en el árbol de géneros.
+> 15>El género de id 17 NO está incluído en el árbol de géneros.
+> 16>El género de id 44 NO está incluído en el árbol de géneros.
+19,20c19,20
+< 19>La altura de del árbol general es: 3.
+< 20>Existen 4 géneros en el árbol de géneros.
+---
+> 19>La altura de del árbol general es: 0.
+> 20>Existen 0 géneros en el árbol de géneros.
+22,23c22,23
+< 22>La altura de del árbol general es: 3.
+< 23>Existen 5 géneros en el árbol de géneros.
+---
+> 22>La altura de del árbol general es: 0.
+> 23>Existen 0 géneros en el árbol de géneros.
+25,26c25,26
+< 25>La altura de del árbol general es: 4.
+< 26>Existen 6 géneros en el árbol de géneros.
+---
+> 25>La altura de del árbol general es: 0.
+> 26>Existen 0 géneros en el árbol de géneros.
+28,29c28,29
+< 28>La altura de del árbol general es: 5.
+< 29>Existen 7 géneros en el árbol de géneros.
+---
+> 28>La altura de del árbol general es: 0.
+> 29>Existen 0 géneros en el árbol de géneros.
+31,32c31,32
+< 31>La altura de del árbol general es: 6.
+< 32>Existen 8 géneros en el árbol de géneros.
+---
+> 31>La altura de del árbol general es: 0.
+> 32>Existen 0 géneros en el árbol de géneros.
+34,35c34,35
+< 34>La altura de del árbol general es: 7.
+< 35>Existen 9 géneros en el árbol de géneros.
+---
+> 34>La altura de del árbol general es: 0.
+> 35>Existen 0 géneros en el árbol de géneros.

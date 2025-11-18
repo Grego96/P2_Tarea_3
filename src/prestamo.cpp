@@ -104,3 +104,26 @@ TPrestamo copiarTPrestamo(TPrestamo prestamo)
   }
   return copiaPrestamo;
 }
+
+void liberarTPrestamoSoloEstructura(TPrestamo &prestamo)
+{
+  if (prestamo == NULL)
+    return;
+
+  // liberar fechas asociadas si existen (no liberar socio ni libro)
+  TFecha fr = fechaRetiroTPrestamo(prestamo);
+  if (fr != NULL)
+  {
+    liberarTFecha(fr);
+  }
+
+  TFecha fd = fechaDevolucionTPrestamo(prestamo);
+  if (fd != NULL)
+  {
+    liberarTFecha(fd);
+  }
+
+  // finalmente liberar la estructura del préstamo
+  delete prestamo;
+  prestamo = NULL;
+}

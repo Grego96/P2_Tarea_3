@@ -83,7 +83,6 @@ void actualizarFechaDevolucionTPrestamo(TPrestamo prestamo, TFecha fechaDevoluci
 // Debe ejecutar en O(1) peor caso
 TPrestamo copiarTPrestamo(TPrestamo prestamo);
 
-
 /* ********** FUNCIONES NUEVAS TAREA 3 ********** */
 // Libera la memoria asignada para un préstamo y sus fechas asociadas.
 // IMPORTANTE: Esta función NO libera la memoria del socio ni del libro apuntados por el préstamo,
@@ -93,4 +92,4 @@ TPrestamo copiarTPrestamo(TPrestamo prestamo);
 // La función es O(1) en el peor caso.
 void liberarTPrestamoSoloEstructura(TPrestamo &prestamo);
 
-#endif  // TPRESTAMO_H
+#endif // TPRESTAMO_H

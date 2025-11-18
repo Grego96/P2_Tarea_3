@@ -16,6 +16,27 @@ struct rep_ldePrestamos
     int cantidad;
 };
 
+void liberarTLDEPrestamosSoloEstructura(TLDEPrestamos &ldePrestamos)
+{
+    if (ldePrestamos == NULL)
+    {
+        return;
+    }
+
+    nodoDoble *actual = ldePrestamos->primero;
+    while (actual != NULL)
+    {
+        nodoDoble *aux = actual;
+        actual = actual->sig;
+        // libera sólo la estructura del préstamo (no socios ni libros)
+        liberarTPrestamoSoloEstructura(aux->prestamo);
+        delete aux;
+    }
+
+    delete ldePrestamos;
+    ldePrestamos = NULL;
+};
+
 TLDEPrestamos crearTLDEPrestamosVacia()
 {
     TLDEPrestamos nuevoPrestamo = new rep_ldePrestamos;

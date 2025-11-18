@@ -1,0 +1,34 @@
+1>Se creó conjunto generos con cantMax 8 exitosamente.
+2>El conjunto de generos es vacío.
+3>El cardinal del conjunto es: 0.
+4>Conjunto de generos:
+5>Se ejecutó 'insertarTConjuntoGeneros con genero de id 0 exitosamente.
+6>Se ejecutó 'insertarTConjuntoGeneros con genero de id 2 exitosamente.
+7>Se ejecutó 'insertarTConjuntoGeneros con genero de id 3 exitosamente.
+8>Se ejecutó 'insertarTConjuntoGeneros con genero de id 5 exitosamente.
+9>Se ejecutó 'insertarTConjuntoGeneros con genero de id 7 exitosamente.
+10>Conjunto de generos:
+11>El cardinal del conjunto es: 0.
+12>El genero de id 3 pertenece al conjunto.
+13>El genero de id 4 pertenece al conjunto.
+14>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 5 exitosamente.
+15>El genero de id 5 pertenece al conjunto.
+16>El cardinal del conjunto es: 0.
+17>Conjunto de generos:
+18>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 1 exitosamente.
+19>El cardinal del conjunto es: 0.
+20>Conjunto de generos unión:
+21>Conjunto de generos intersección:
+22>Conjunto de generos diferencia:
+23>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 0 exitosamente.
+24>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 2 exitosamente.
+25>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 3 exitosamente.
+26>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 7 exitosamente.
+27>El conjunto de generos es vacío.
+28>El cardinal del conjunto es: 0.
+29>Conjunto de generos:
+30>Conjunto de generos unión:
+31>Conjunto de generos intersección:
+32>Conjunto de generos diferencia:
+33>Se ejecutó 'liberarTConjuntoGeneros' exitosamente.
+34>Fin.

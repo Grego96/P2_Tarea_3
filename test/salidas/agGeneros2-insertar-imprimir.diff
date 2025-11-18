@@ -1,0 +1,52 @@
+2,3c2
+< 2>Árbol de géneros:
+< 3>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre -1 e idGenero 18.
+---
+> 2>3>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre -1 e idGenero 18.
+9,16c8
+< 9>Árbol de géneros:
+< 18 - Terror
+<     24 - Accion
+<     23 - Comedia
+<     22 - Drama
+<         16 - Comedia
+<         15 - Comedia
+< 10>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre 23 e idGenero 40.
+---
+> 9>10>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre 23 e idGenero 40.
+22,35c14
+< 16>Árbol de géneros:
+< 18 - Terror
+<     24 - Accion
+<     23 - Comedia
+<         48 - Comedia
+<         44 - Historica
+<             100 - Terror
+<         41 - Romance
+<             88 - Drama
+<         40 - Historica
+<     22 - Drama
+<         16 - Comedia
+<         15 - Comedia
+< 17>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre 100 e idGenero 101.
+---
+> 16>17>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre 100 e idGenero 101.
+37,52c16
+< 19>Árbol de géneros:
+< 18 - Terror
+<     24 - Accion
+<     23 - Comedia
+<         48 - Comedia
+<         44 - Historica
+<             100 - Terror
+<                 101 - Terror
+<                     102 - Historica
+<         41 - Romance
+<             88 - Drama
+<         40 - Historica
+<     22 - Drama
+<         16 - Comedia
+<         15 - Comedia
+< 20>Se ejecutó 'liberarTAGGeneros' exitosamente.
+---
+> 19>20>Se ejecutó 'liberarTAGGeneros' exitosamente.

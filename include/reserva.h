@@ -61,4 +61,4 @@ TReserva copiarTReserva(TReserva reserva);
 // Debe ejecutar en O(1) peor caso
 void liberarTReservaSoloEstructura(TReserva &reserva);
 
-#endif  // TRESERVA_H
+#endif // TRESERVA_H

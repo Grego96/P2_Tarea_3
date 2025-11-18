@@ -1,0 +1,3 @@
+principal: principal.cpp:1343: void main_obtenerSubarbolAGGeneros(TAGGeneros): Assertion `existeGeneroTAGGeneros(arbolGeneros, idGenero)' failed.
+timeout: the monitored command dumped core
+Aborted

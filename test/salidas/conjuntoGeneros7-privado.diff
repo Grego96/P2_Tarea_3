@@ -1,0 +1,37 @@
+5d4
+< 
+12,13c11
+< 0 2 3 5 7
+< 11>El cardinal del conjunto es: 5.
+---
+> 11>El cardinal del conjunto es: 0.
+15c13
+< 13>El genero de id 4 NO pertenece al conjunto.
+---
+> 13>El genero de id 4 pertenece al conjunto.
+17,18c15,16
+< 15>El genero de id 5 NO pertenece al conjunto.
+< 16>El cardinal del conjunto es: 4.
+---
+> 15>El genero de id 5 pertenece al conjunto.
+> 16>El cardinal del conjunto es: 0.
+20d17
+< 0 2 3 7
+22c19
+< 19>El cardinal del conjunto es: 4.
+---
+> 19>El cardinal del conjunto es: 0.
+24d20
+< 0 1 2 3 6 7
+26d21
+< 2 3
+28d22
+< 0 7
+36d29
+< 
+38d30
+< 1 5
+40d31
+< 
+42d32
+< 
