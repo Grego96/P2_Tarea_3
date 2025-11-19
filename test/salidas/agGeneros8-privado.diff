@@ -1,4 +1,4 @@
-1,49c1,2
+1,49c1,3
 < 1>Se ejecutó 'crearTAGGeneros' exitosamente.
 < 2>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre -1 e idGenero 100.
 < 3>Se ejecutó 'insertarGeneroTAGGeneros' con idGeneroPadre 100 e idGenero 110.
@@ -51,3 +51,4 @@
 ---
 > principal: principal.cpp:1331: void main_removerGeneroAGGeneros(TAGGeneros): Assertion `existeGeneroTAGGeneros(arbolGeneros, idGenero)' failed.
 > timeout: the monitored command dumped core
+> Aborted

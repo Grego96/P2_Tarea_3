@@ -1,4 +1,4 @@
-1,16c1,2
+1,16c1,3
 < 1>Biblioteca creada exitosamente.
 < 2>Socio de ci 12345678 creado exitosamente.
 < 3>Socio de CI 12345678 agregado a la biblioteca.
@@ -18,3 +18,4 @@
 ---
 > principal: principal.cpp:1581: void main_agregarSocioBiblioteca(rep_biblioteca*&, rep_socio*&): Assertion `biblioteca != NULL && socio != NULL' failed.
 > timeout: the monitored command dumped core
+> Aborted

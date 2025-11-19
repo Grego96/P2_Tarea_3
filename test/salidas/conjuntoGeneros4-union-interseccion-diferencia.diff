@@ -1,18 +1,58 @@
-11d10
+1,37c1,19
+< 1>Se creó conjunto generos con cantMax 10 exitosamente.
+< 2>Se ejecutó 'insertarTConjuntoGeneros con genero de id 0 exitosamente.
+< 3>Se ejecutó 'insertarTConjuntoGeneros con genero de id 1 exitosamente.
+< 4>Se ejecutó 'insertarTConjuntoGeneros con genero de id 2 exitosamente.
+< 5>Se ejecutó 'insertarTConjuntoGeneros con genero de id 3 exitosamente.
+< 6>Se ejecutó 'insertarTConjuntoGeneros con genero de id 6 exitosamente.
+< 7>Se ejecutó 'insertarTConjuntoGeneros con genero de id 7 exitosamente.
+< 8>Se ejecutó 'insertarTConjuntoGeneros con genero de id 8 exitosamente.
+< 9>Se ejecutó 'insertarTConjuntoGeneros con genero de id 9 exitosamente.
+< 10>Conjunto de generos:
 < 0 1 2 3 6 7 8 9
-14d12
+< 11>#  unión con 1.
+< 12>Conjunto de generos unión:
 < 0 1 2 3 6 7 8 9
-17d14
+< 13>#  intersección con 1.
+< 14>Conjunto de generos intersección:
 < 1
-20d16
+< 15>#  diferencia con 1.
+< 16>Conjunto de generos diferencia:
 < 0 2 3 6 7 8 9
-23d18
+< 17>#  intersección con 1 3 4 5 6.
+< 18>Conjunto de generos intersección:
 < 1 3 6
-26d20
+< 19>#  diferencia con 1 3 4 5 6.
+< 20>Conjunto de generos diferencia:
 < 0 2 7 8 9
-29d22
+< 21>#  unión con conjunto vacío.
+< 22>Conjunto de generos unión:
 < 0 1 2 3 6 7 8 9
-32d24
+< 23>#  intersección con conjunto vacío.
+< 24>Conjunto de generos intersección:
 < 
-35d26
+< 25>#  diferencia con conjunto vacío.
+< 26>Conjunto de generos diferencia:
 < 0 1 2 3 6 7 8 9
+< 27>Se ejecutó 'liberarTConjuntoGeneros' exitosamente.
+< 28>Fin.
+---
+> ==35071== Invalid read of size 8
+> ==35071==    at 0x110ED4: liberarTConjuntoGeneros(rep_conjuntogeneros*&) (conjuntoGeneros.cpp:100)
+> ==35071==    by 0x10DF1D: main_unionConjuntoGeneros(rep_conjuntogeneros*) (principal.cpp:1491)
+> ==35071==    by 0x10A929: main (principal.cpp:527)
+> ==35071==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
+> ==35071== 
+> ==35071== 
+> ==35071== Process terminating with default action of signal 11 (SIGSEGV)
+> ==35071==  Access not within mapped region at address 0x8
+> ==35071==    at 0x110ED4: liberarTConjuntoGeneros(rep_conjuntogeneros*&) (conjuntoGeneros.cpp:100)
+> ==35071==    by 0x10DF1D: main_unionConjuntoGeneros(rep_conjuntogeneros*) (principal.cpp:1491)
+> ==35071==    by 0x10A929: main (principal.cpp:527)
+> ==35071==  If you believe this happened as a result of a stack
+> ==35071==  overflow in your program's main thread (unlikely but
+> ==35071==  possible), you can try to increase the size of the
+> ==35071==  main thread stack using the --main-stacksize= flag.
+> ==35071==  The main thread stack size used in this run was 8388608.
+> timeout: the monitored command dumped core
+> Segmentation fault

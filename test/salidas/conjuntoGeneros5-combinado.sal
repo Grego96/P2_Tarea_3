@@ -1,33 +1,19 @@
-1>Se creó conjunto generos con cantMax 10 exitosamente.
-2>El cardinal del conjunto es: 0.
-3>La cantidad máxima del conjunto es: 0.
-4>Se ejecutó 'insertarTConjuntoGeneros con genero de id 0 exitosamente.
-5>Se ejecutó 'insertarTConjuntoGeneros con genero de id 1 exitosamente.
-6>Se ejecutó 'insertarTConjuntoGeneros con genero de id 2 exitosamente.
-7>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 1 exitosamente.
-8>Se ejecutó 'insertarTConjuntoGeneros con genero de id 3 exitosamente.
-9>Se ejecutó 'insertarTConjuntoGeneros con genero de id 6 exitosamente.
-10>Se ejecutó 'insertarTConjuntoGeneros con genero de id 7 exitosamente.
-11>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 2 exitosamente.
-12>Se ejecutó 'insertarTConjuntoGeneros con genero de id 8 exitosamente.
-13>Se ejecutó 'insertarTConjuntoGeneros con genero de id 9 exitosamente.
-14>Se ejecutó 'insertarTConjuntoGeneros con genero de id 1 exitosamente.
-15>Se ejecutó 'insertarTConjuntoGeneros con genero de id 2 exitosamente.
-16>El cardinal del conjunto es: 0.
-17>La cantidad máxima del conjunto es: 0.
-18>Conjunto de generos:
-19>Conjunto de generos unión:
-20>Conjunto de generos intersección:
-21>Conjunto de generos diferencia:
-22>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 1 exitosamente.
-23>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 2 exitosamente.
-24>Conjunto de generos unión:
-25>Conjunto de generos intersección:
-26>Conjunto de generos diferencia:
-27>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 8 exitosamente.
-28>Se ejecutó 'borrarDeTConjuntoGeneros con genero de id 9 exitosamente.
-29>Conjunto de generos unión:
-30>Conjunto de generos intersección:
-31>Conjunto de generos diferencia:
-32>Se ejecutó 'liberarTConjuntoGeneros' exitosamente.
-33>Fin.
+==35101== Invalid read of size 8
+==35101==    at 0x110ED4: liberarTConjuntoGeneros(rep_conjuntogeneros*&) (conjuntoGeneros.cpp:100)
+==35101==    by 0x10DF1D: main_unionConjuntoGeneros(rep_conjuntogeneros*) (principal.cpp:1491)
+==35101==    by 0x10A929: main (principal.cpp:527)
+==35101==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
+==35101== 
+==35101== 
+==35101== Process terminating with default action of signal 11 (SIGSEGV)
+==35101==  Access not within mapped region at address 0x8
+==35101==    at 0x110ED4: liberarTConjuntoGeneros(rep_conjuntogeneros*&) (conjuntoGeneros.cpp:100)
+==35101==    by 0x10DF1D: main_unionConjuntoGeneros(rep_conjuntogeneros*) (principal.cpp:1491)
+==35101==    by 0x10A929: main (principal.cpp:527)
+==35101==  If you believe this happened as a result of a stack
+==35101==  overflow in your program's main thread (unlikely but
+==35101==  possible), you can try to increase the size of the
+==35101==  main thread stack using the --main-stacksize= flag.
+==35101==  The main thread stack size used in this run was 8388608.
+timeout: the monitored command dumped core
+Segmentation fault

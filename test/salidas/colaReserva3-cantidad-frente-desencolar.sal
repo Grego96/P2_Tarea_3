@@ -1,9 +1,9 @@
 principal: principal.cpp:1402: void main_desencolarColaReservas(TColaReservas): Assertion `cantidadTColaReservas(colaReservas) > 0' failed.
-==17082== 496 (16 direct, 480 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 8
-==17082==    at 0x4846FA3: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==17082==    by 0x1108E7: crearTReserva(rep_socio*, rep_libro*) (reserva.cpp:12)
-==17082==    by 0x10D2A9: main_crearReserva(rep_reserva*&, rep_socio*&, rep_libro*&) (principal.cpp:1236)
-==17082==    by 0x10A29D: main (principal.cpp:445)
-==17082== 
+==34990== 496 (16 direct, 480 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 8
+==34990==    at 0x4846FA3: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==34990==    by 0x1108E7: crearTReserva(rep_socio*, rep_libro*) (reserva.cpp:12)
+==34990==    by 0x10D2A9: main_crearReserva(rep_reserva*&, rep_socio*&, rep_libro*&) (principal.cpp:1236)
+==34990==    by 0x10A29D: main (principal.cpp:445)
+==34990== 
 timeout: the monitored command dumped core
 Aborted
