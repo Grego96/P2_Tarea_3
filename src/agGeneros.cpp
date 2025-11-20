@@ -12,7 +12,12 @@ struct rep_agGeneros
 
 TAGGeneros crearTAGGeneros()
 {
-  return NULL;
+  TAGGeneros nuevoTAGGenero = new rep_agGeneros;
+  nuevoTAGGenero->codigo = -1;
+  nuevoTAGGenero->genero[0] = '\0';
+  nuevoTAGGenero->ph = NULL;
+  nuevoTAGGenero->sh = NULL;
+  return nuevoTAGGenero;
 }
 
 void insertarGeneroTAGGeneros(TAGGeneros &arbolGeneros, int idGeneroPadre, int idGenero, const char nombreGenero[MAX_NOMBRE])
