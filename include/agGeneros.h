@@ -7,18 +7,18 @@
   Laboratorio de Programación 2.
   InCo-FIng-UDELAR
  */
- #ifndef AGGENEROS_H
- #define AGGENEROS_H
+#ifndef AGGENEROS_H
+#define AGGENEROS_H
 
- #include "utils.h"
- #include <string.h>
- #include "conjuntoGeneros.h"
+#include "utils.h"
+#include <string.h>
+#include "conjuntoGeneros.h"
 
 // Constantes para definir el largo máximo del nombre del género.
 const int MAX_NOMBRE = 50;
 
- // Define el tipo TAGGeneros como un puntero a rep_agGeneros.
- typedef struct rep_agGeneros *TAGGeneros;
+// Define el tipo TAGGeneros como un puntero a rep_agGeneros.
+typedef struct rep_agGeneros *TAGGeneros;
 
 // Función para crear un nuevo arbol general
 // Devuelve un nuevo árbol general vacío
@@ -32,7 +32,7 @@ TAGGeneros crearTAGGeneros();
 // PRE: Si el árbol es vacío, la primer inserción será con idGeneroPadre = -1
 // PRE: Si el árbol no es vacío, el género con idGeneroPadre pertenece al árbol
 // Debe ejecutar en O(n) peor caso, siendo n la cantidad de géneros en el árbol.
-void insertarGeneroTAGGeneros(TAGGeneros &arbolGeneros, int idGeneroPadre, int idGenero, const char nombreGenero[MAX_NOMBRE] );
+void insertarGeneroTAGGeneros(TAGGeneros &arbolGeneros, int idGeneroPadre, int idGenero, const char nombreGenero[MAX_NOMBRE]);
 
 // Función para imprimir el árbol general. Los hermanos se imprimen según
 // el orden inverso de creación (el último hermano en ser agregado se imprime primero).
@@ -67,7 +67,7 @@ bool existeGeneroTAGGeneros(TAGGeneros arbolGeneros, int idGenero);
 // Función que devuelve el nombre de un género dado su id.
 // En caso de que el género no pertenezca al árbol, devuelve NULL.
 // Debe ejecutar en O(n) peor caso, siendo n la cantidad de géneros en el árbol.
-char* nombreGeneroTAGGeneros(TAGGeneros arbolGeneros, int idGenero);
+char *nombreGeneroTAGGeneros(TAGGeneros arbolGeneros, int idGenero);
 
 // Función para obtener la altura del árbol general.
 // Debe ejecutar en O(n) peor caso, siendo n la cantidad de géneros en el árbol.
@@ -94,8 +94,8 @@ TAGGeneros obtenerSubarbolTAGGeneros(TAGGeneros arbolGeneros, int idGenero);
 int obtenerMaxTAGGeneros(TAGGeneros arbolGeneros);
 
 // Función para obtener un conjunto de géneros a partir de árbol de géneros.
-// El conjunto de géneros retornado esta formado por los géneros que pertenecen al 
+// El conjunto de géneros retornado esta formado por los géneros que pertenecen al
 // subarbol cuya raíz tiene el idGenero pasado por parámetro
 TConjuntoGeneros obtenerConjuntoGeneros(TAGGeneros arbolGeneros, int idGenero);
 
- #endif // AGGENEROS_H
+#endif // AGGENEROS_H
