@@ -22,6 +22,28 @@ TAGGeneros crearTAGGeneros()
 
 void insertarGeneroTAGGeneros(TAGGeneros &arbolGeneros, int idGeneroPadre, int idGenero, const char nombreGenero[MAX_NOMBRE])
 {
+  if (idGeneroPadre == -1)
+  {
+    if (!arbolGeneros)
+    {
+      arbolGeneros = crearTAGGeneros();
+    }
+    arbolGeneros->codigo = idGenero;
+    return;
+  }
+  if (!arbolGeneros)
+  {
+    return;
+  }
+  if (arbolGeneros->codigo == idGeneroPadre)
+  {
+    TAGGeneros nuevoArbol = crearTAGGeneros();
+    nuevoArbol->codigo = idGenero;
+    nuevoArbol->sh = arbolGeneros->sh;
+    nuevoArbol->ph = NULL;
+    arbolGeneros->ph = nuevoArbol;
+    return;
+  }
 }
 
 void imprimirTAGGeneros(TAGGeneros arbolGeneros)
